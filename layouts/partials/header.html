@@ -1,3 +1,5 @@
+
+
 <header class="intro-and-nav" role="banner">
   <div>
     <div class="intro">
@@ -8,8 +10,7 @@
       
         <h2>Mitchell Weggemans</h2>
       </a>
-      <p class="library-desc">
-        {{ with .Site.Params.description }} {{ . | markdownify }} {{ end }}
+      <p id="description" class="library-desc">
       </p>
     </div>
     {{ partial "nav.html" . }}
@@ -18,3 +19,33 @@
     {{ end }}
   </div>
 </header>
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+<script>
+    var desc = document.getElementById('description');
+
+    var typewriter = new Typewriter(desc, {
+    loop: true,
+    delay: 75,
+    });
+
+    typewriter
+    .pauseFor(1000)
+    .typeString('Artificially Enhanced')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('What goes here?')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('Probably playing chess...')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('JavaScript is scary')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('Follow me on GitHub!')
+    .pauseFor(1500)
+    .start();
+
+</script>
