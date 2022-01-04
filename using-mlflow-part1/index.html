@@ -4,8 +4,9 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=generator content="Hugo 0.91.2">
-<link rel=canonical href=/post/>
-<meta name=description content="Blog">
+<link rel=canonical href=/using-mlflow-part1/>
+<meta name=description content="Preamble If you’ve doing anything with machine-learning in the past, you know how much of a pain it is to keep track of your models. When testing, you might have multiple versions of the same model just lying around, without knowing what parameters went into it to produce the result. MLFlow aims to tackle this issue.
+Setting up MLFlow Before installing MLFlow, it is recommended to initialize a virtual environment first:">
 <link rel=apple-touch-icon sizes=180x180 href=https://MitchellWeg.github.io/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=https://MitchellWeg.github.io/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=https://MitchellWeg.github.io/favicon-16x16.png>
@@ -19,7 +20,7 @@
 <link rel=stylesheet type=text/css href=/css/styles.css>
 <link rel=stylesheet href=/css/custom_01.css>
 <link rel=stylesheet href=/css/custom_02.css>
-<title>Blog | Mitchell Weggemans - Blog</title>
+<title>Using MLFlow to version your ML models [Part 1] | Mitchell Weggemans - Blog</title>
 </head>
 <body>
 <a href=#main>skip to content</a>
@@ -76,17 +77,55 @@ Menu
 <div class=main-and-footer>
 <div>
 <main id=main>
-<h1>Blog</h1>
-<input id=search type=text placeholder="Search by title..." aria-label="Search by title">
-<ul class=patterns-list id=list>
-<li>
-<h2>
-<a href=/using-mlflow-part1/><svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false"><use xlink:href="#bookmark"/></svg>
+<h1><svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false"><use xlink:href="#bookmark"/></svg>
 Using MLFlow to version your ML models [Part 1]
-</a>
-</h2>
+</h1>
+<div class=date>
+<strong>Publish date: </strong>Jan 4, 2022
+</div>
+<div class=tags>
+<strong>Tags: </strong>
+<ul aria-label=tags>
+<li><svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false"><use xlink:href="#tag"/></svg>
+<a href=/tags/mlflow/>mlflow</a>
+</li>
+<li><svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false"><use xlink:href="#tag"/></svg>
+<a href=/tags/machine-learning/>machine-learning</a>
 </li>
 </ul>
+</div>
+<h3 id=preamble>Preamble</h3>
+<p>If you&rsquo;ve doing anything with machine-learning in the past, you know how much of a pain it is to keep track of your models.
+When testing, you might have multiple versions of the same model just lying around, without knowing what parameters went into it to produce the result.
+MLFlow aims to tackle this issue.</p>
+<h3 id=setting-up-mlflow>Setting up MLFlow</h3>
+<p>Before installing MLFlow, it is recommended to initialize a virtual environment first:</p>
+<pre><code class=language-bash>virtualenv env
+source env/bin/activate
+</code></pre>
+<p>This makes sure that no dependencies will conflict with eachother.</p>
+<p>Setting up MLFlow is pretty easy using pip:</p>
+<pre><code class=language-bash>pip install mlflow
+</code></pre>
+<p>This will install MLFlow alongside it&rsquo;s necessary dependencies in your virtual environment.</p>
+<p>You&rsquo;re now ready to use MLFlow!</p>
+<p>First, run the MLFlow server and UI:</p>
+<pre><code class=language-bash>mlflow ui
+</code></pre>
+<p>or:</p>
+<pre><code class=language-bash>mlflow server
+</code></pre>
+<p>this produces the following output:</p>
+<pre><code class=language-bash>[2022-01-04 16:24:28 +0100] [30405] [INFO] Starting gunicorn 20.1.0
+[2022-01-04 16:24:28 +0100] [30405] [INFO] Listening at: http://127.0.0.1:5000 (30405)
+[2022-01-04 16:24:28 +0100] [30405] [INFO] Using worker: sync
+[2022-01-04 16:24:28 +0100] [30406] [INFO] Booting worker with pid: 30406
+[2022-01-04 16:24:28 +0100] [30407] [INFO] Booting worker with pid: 30407
+[2022-01-04 16:24:28 +0100] [30408] [INFO] Booting worker with pid: 30408
+[2022-01-04 16:24:28 +0100] [30409] [INFO] Booting worker with pid: 30409
+</code></pre>
+<p>This tells us that the server has started at <code>localhost:5000</code>. If you navigate to it in the browser, you are greeted by the homescreen:
+<img src=/images/mlflow-home-screen.png alt></p>
 </main>
 <footer role=contentinfo>
 <div>
