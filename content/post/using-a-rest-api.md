@@ -10,19 +10,14 @@ A RESTful API, mostly truncated to a REST API, is a way to communicate with your
 REST utilizes a number of methods. The most popular are: __GET__, __POST__, __PUT__, __PATCH__ and __DELETE__
 
 - __GET__:
-
-The most common method. This _gets_ a resource from the service.
+ most common method. This _gets_ a resource from the service.
 - __POST__:
-
 This creates a resource from on the service.
 - __PUT__:
-
 This creates or replaces a resource on the service. The difference between __PUT__ and __POST__ is that calling it multiple times has the same effect, meaning its _idempotent_.
 - __PATCH__:
-
 This updates a resource on the service.
 - __DELETE__:
-
 This deletes a resource on the service.
 
 ### Returned values from a REST API
