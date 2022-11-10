@@ -7,7 +7,7 @@ tags: ["rest-api"]
 ### What is REST?
 A RESTful API, mostly truncated to a REST API, is a way to communicate with your backend. 
 
-REST utilizes a number of methods. The most popular are: __GET__, __POST__, __PUT__, __PATCH__ & __DELETE__
+REST utilizes a number of methods. The most popular are: __GET__, __POST__, __PUT__, __PATCH__ and __DELETE__
 
 - __GET__:
 
@@ -30,7 +30,7 @@ The main reason why a REST API is used is because it can handle _requests_. a _r
 
 You can request the API to fetch an object for you using the GET method. You can request the API to store an object (e.g. store a new user after signing up) using the POST method. 
 
-When you request the API to fetch you something, it will return it in a standardized format. Most of the times that means it will be returned in JSON. JSON (or JavaScript Object Notation) is a interchange format where objects can be encoded in text. JSON is easy and lightweight to parse. An example of JSON:
+When you request the API to fetch you something, it will return it in a standardized format. Most of the times that means it will be returned in JSON. JSON (or JavaScript Object Notation) is a interchange format where objects can be encoded in text. JSON is easy and lightweight to parse. JSON is written in the following way:
 
 ```json
 {
@@ -112,14 +112,14 @@ json_pp | curl https://my-api.com/api/get-route
 ```
 
 ### Separate API vs Monolithic
-Another way of implementing is to create a complete _monolithic_ application. This means that your frontend and logic are mostly interwoven. This has some advantages but also a number of drawbacks.
+Another way of implementing is to create a complete _monolithic_ application. This means that your frontend and logic are mostly interwoven. This has some advantages, but also a number of drawbacks.
 
-An advantage of a monolithic application is the ease of setting it up and maintaining if the application is small. In a monolithic application is the logic and frontend mostly interwoven, which makes it easier to change the logic since you know where to look.
+An advantage of a monolithic application is the ease of setting it up and maintaining if the application is small. In a monolithic application, the logic and frontend are mostly interwoven; this makes it easier to change the logic since you know where to look.
 
-This proofs disastrous for scalability. When only some components in your backend receive the bulk of the traffic, those cannot be scaled up individually. When your application needs upscaling, the whole application needs to be scaled up, which would mostly be redundant.
+This proves disastrous for scalability. When only some components in your backend receive the bulk of the traffic, those cannot be scaled up individually. When your application needs upscaling, the whole application needs to be scaled up, which would mostly be redundant.
 
 When your API and frontend are completely separated, you're able to scale them up indivually if need be.
 
 Another advantage of a separate API is the ability to use the best tool for the job. Need something that is simple? Use Python's [Flask](https://flask.palletsprojects.com/en/2.2.x/). Need something more performant? Use Go's [mux](https://github.com/gorilla/mux) or Rust's [rocket](https://rocket.rs/). You are not bound by just one programming language.
 
-With a separate REST API the backend is not bound by the frontend, but it's the other way around. The API does not decide what the UI will look like. This way, it's easier to change something in the frontend without breaking something. Since the API does not get to decide what the frontend looks like, it also can be used for multiple frontends. Meaning that if you want to have a website but also a mobile app, they both can use the same backend.
+With a separate REST API, the backend is not bound by the frontend, but it's the other way around. The API does not decide what the UI will look like. This way, it's easier to change something in the frontend without breaking something. Since the API does not get to decide what the frontend looks like, it also can be used for multiple frontends. Meaning that if you want to have a website but also a mobile app, they both can use the same backend.

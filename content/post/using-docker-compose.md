@@ -5,10 +5,10 @@ tags: ["docker", "docker-compose"]
 ---
 
 ### Preamble
-Nowadays, everyone's favorite buzzword is "__microservices__", and that's very logical. In a microservices architecture it's easy to scale up separate services as need be. It's a proven architecture pioneered by companies as [Netflix](https://www.youtube.com/watch?v=CZ3wIuvmHeM&ab_channel=InfoQ). However, sometimes it can be tedious to take care of the separate services. That is why __Docker__ was invented.
+Nowadays, everyone's favorite buzzword is "__microservices__", and that's very logical. In a microservices architecture, its easy to scale up separate services as need be. It's a proven architecture pioneered by companies as [Netflix](https://www.youtube.com/watch?v=CZ3wIuvmHeM&ab_channel=InfoQ). However, sometimes it can be tedious to take care of the separate services. That is why __Docker__ was invented.
 
 ### What is Docker?
-Docker is a way of _containerizing_ applications. A container is a way of "packing up" a piece of code along with its dependencies. This way the application can be started quickly and it can be reliably run across many sorts of computers with many sorts of different architectures.
+Docker is a way of _containerizing_ applications. A container is a way of "packing up" a piece of code along with its dependencies. This way, the application can be started quickly and it can be reliably run across many sorts of computers with many sorts of different architectures.
 
 A Docker container is created with a _Dockerfile_. A Dockerfile is a way to tell Docker how to build your container. In a Dockerfile you can specify the OS you want your application to run on (most commonly used are Ubuntu, Alpine or Fedora), where your application is and how to run it.
 
@@ -37,7 +37,7 @@ And to run the container:
 docker run -it your_image
 ```
 ### What is Docker-compose?
-It is however sometimes tedious to keep track of building images and the images you have built. Therefore docker-compose was created.
+It is, however, sometimes tedious to keep track of building images and the images you have built. Therefore docker-compose was created.
 
 Docker-compose is a tool that multiple docker containers can be build from a single YAML file. This massively simplifies the maintaince of your application. Note: Dockerfiles are still necessary.
 ### How to use docker-compose
@@ -53,7 +53,7 @@ services:
 
 To create the container run: `docker-compose up --build`.
 
-Now navigate in your browser to localhost:8000 and you should see your application.
+Now you can navigate in your browser to localhost:8000 and you should see your application.
 
 Another big advantage of docker-compose is that you can use already existing container through [Dockerhub](https://hub.docker.com/). Lets create a Redis database service, using redis' own container:
 ```yaml
@@ -85,7 +85,7 @@ This sets the password for the redis CLI in your container.
 This is not only limited to the redis container. Consult the reference of your container you want to use to see all the environment variables you can set.
 
 #### Networks
-With docker-compose you can also specify a network. This is an internal network which can be used by the containers to talk to each other. By default docker-compose creates a network.
+With docker-compose, you can also specify a network. This is an internal network which can be used by the containers to talk to each other. By default docker-compose creates a network.
 
 You can join two (or more) containers together like this:
 ```yaml
