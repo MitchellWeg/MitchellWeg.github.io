@@ -12,6 +12,11 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/mitchell-weggemans-36b
     </th>
     <tr>
         <td>
+        <a href="https://mitchellweg.github.io/combine-stats-part-1/">The Statistical Significance of the NFL Combine - Part 1</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
         <a href="https://mitchellweg.github.io/hashmap-implementation-and-usage/">Using a HashMap </a>
         </td>
     </tr>
