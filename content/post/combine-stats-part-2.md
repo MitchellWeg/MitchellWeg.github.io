@@ -193,3 +193,7 @@ Lets compare these stats to that years average.
 ```
 
 As you can see, apart from the three cones drill, his combine statistics are pretty underwhelming.
+
+So do you need a have an extraordinary combine drill to have an extraordinary career? Apparently, no. Is it a good indicator on how the player performs? Maybe.
+
+This wraps up the blogpost. If you liked this kind of content make sure to let me know by reaching out to me! It is highly appreciated.
