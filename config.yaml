@@ -50,9 +50,12 @@ menu:
     - name: About
       url: /about/
       weight: 4
+    - name: Resume
+      url: /resume/
+      weight: 5
     - name: RSS
       url: /index.xml
-      weight: 5
+      weight: 6
 
 markup:
   defaultMarkdownHandler: goldmark
