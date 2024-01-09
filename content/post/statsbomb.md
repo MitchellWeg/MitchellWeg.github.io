@@ -4,6 +4,14 @@ date: "2024-01-09"
 tags: ["football", "statsbomb", "statistics"]
 ---
 
+### Preamble
+
+Data is the new gold. And luckily, there is an abundance to be found if you just look for it hard enough.
+Nowadays, it is used virtually everywhere.
+
+Today we're gonna take a look at the open dataset provided by [Statsbomb](https://statsbomb.com/what-we-do/hub/free-data/). Within this dataset, a lot of goodies are waiting to be discovered.
+
+In this post I'll walk you through on how to import and visualize the data.
 
 ### The Code
 
