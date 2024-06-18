@@ -105,3 +105,62 @@ s = a^{p+j}b^p
 $$
 
 Which is in a form that is clearly not in our language.
+
+### Ogden's Lemma
+
+There is another way to prove non regularity in languages.
+This way is called *Ogden's Lemma*.
+
+Ogden's Lemma relies on 'marking' parts of the string. 'Marking' in this sense means focussing on a part of the string. If you have a language with - for instance - three separate letters *a* *b* and *c*, you can choose to *mark* the a's and the c's.
+
+Ogden's Lemma divides the string up into five parts:
+
+$$
+s = uvwxy
+$$
+
+This string has to comply to the following rules:
+
+1. *vx* has at least one marked position.
+2. *vwx* has at most *p* marked positions.
+3.
+
+$$
+uv^nwx^ny \in L \quad \text{for all} \quad n \geq 0
+$$
+
+### Proof
+
+Suppose we have a language:
+
+$$
+L = \lbrace a^n b^n c^n \mid n > 0 \rbrace
+$$
+
+We want to prove that this language is not regular.
+
+Lets choose a pumping length *p*, such that:
+
+$$
+L = \lbrace a^p b^p c^p \mid p > 0 \rbrace
+$$
+
+Lets, for instance, mark all the a's and c's.
+This would mean you get the following:
+
+$$
+u = a^i \quad
+v = a^j \quad
+w = a^{p-i-j}b^p \quad
+x = c^k \quad
+y = c^{p-k} \quad
+$$
+
+If, like in the pumping lemma above, we would pump *v* and *x*, you would end up with:
+
+$$
+v = a^{p+j} \quad
+x = c^{p+k} 
+$$
+
+Which is not in the language.
