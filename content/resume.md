@@ -4,7 +4,11 @@ Mitchell Weggemans
 Education
 ---------
 
-2019-2023 (expected)
+2023-2026 (expected)
+:   **MSc Software Engineering**; Universiteit van Amsterdam, Amsterdam.
+
+
+2019-2023
 :   **BSc Software Engineering**; Hogeschool van Amsterdam, Amsterdam.
 
     * Minor: Big Data & Machine Learning
@@ -17,7 +21,12 @@ Education
 Experience
 ----------
 
-2020 - (current)
+2024 - (current)
+:   **AZ Alkmaar**
+
+AZ Alkmaar is a professional football club based in Alkmaar, NH, Netherlands. They currently compete in the top flight of Dutch football, and are a regular competitor in European tournaments.
+
+2020 - 2024
 :   **MonetDB Solutions**
 
 MonetDB Solutions is a spin-off company from the CWI at Science Park in Amsterdam. This is where the column store database MonetDB was born in 1993.
