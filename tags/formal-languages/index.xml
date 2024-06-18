@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Formal-Languages on Mitchell Weggemans - Blog</title><link>https://MitchellWeg.github.io/tags/formal-languages/</link><description>Recent content in Formal-Languages on Mitchell Weggemans - Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://MitchellWeg.github.io/tags/formal-languages/index.xml" rel="self" type="application/rss+xml"/><item><title>Pumping Lemma and Ogden's Lemma</title><link>https://MitchellWeg.github.io/pumping-lemma/</link><pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate><guid>https://MitchellWeg.github.io/pumping-lemma/</guid><description>The Pumping Lemma Formally, the pumping lemma states:
+Suppose L is a regular language. There exists a p (the pumping length) such that every w in L can be divided into three substrings, satisfying the following conditions:
+$$ w = xyz $$
+$$ |xy| \leq p $$
+$$ |y| \geq 1 $$
+The above says the length (denoted by the pipe symbol &amp;lsquo;|&amp;rsquo;) of the substring xy should be less than or equal to the pumping length, and the length of the substring y should be greater than or equal to 1.</description></item></channel></rss>
