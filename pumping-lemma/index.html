@@ -44,6 +44,25 @@ $$</p><p>Which becomes:</p><p>$$
 s = x^iy^jy^jz^{p-i-j}b^p
 $$</p><p>Which, when we simplify, would become:</p><p>$$
 s = a^{p+j}b^p
-$$</p><p>Which is in a form that is clearly not in our language.</p></main><footer role=contentinfo><div><label for=themer>dark theme: <input type=checkbox id=themer class=vh>
+$$</p><p>Which is in a form that is clearly not in our language.</p><h3 id=ogdens-lemma>Ogden&rsquo;s Lemma</h3><p>There is another way to prove non regularity in languages.
+This way is called <em>Ogden&rsquo;s Lemma</em>.</p><p>Ogden&rsquo;s Lemma relies on &lsquo;marking&rsquo; parts of the string. &lsquo;Marking&rsquo; in this sense means focussing on a part of the string. If you have a language with - for instance - three separate letters <em>a</em> <em>b</em> and <em>c</em>, you can choose to <em>mark</em> the a&rsquo;s and the c&rsquo;s.</p><p>Ogden&rsquo;s Lemma divides the string up into five parts:</p><p>$$
+s = uvwxy
+$$</p><p>This string has to comply to the following rules:</p><ol><li><em>vx</em> has at least one marked position.</li><li><em>vwx</em> has at most <em>p</em> marked positions.</li><li></li></ol><p>$$
+uv^nwx^ny \in L \quad \text{for all} \quad n \geq 0
+$$</p><h3 id=proof-1>Proof</h3><p>Suppose we have a language:</p><p>$$
+L = \lbrace a^n b^n c^n \mid n > 0 \rbrace
+$$</p><p>We want to prove that this language is not regular.</p><p>Lets choose a pumping length <em>p</em>, such that:</p><p>$$
+L = \lbrace a^p b^p c^p \mid p > 0 \rbrace
+$$</p><p>Lets, for instance, mark all the a&rsquo;s and c&rsquo;s.
+This would mean you get the following:</p><p>$$
+u = a^i \quad
+v = a^j \quad
+w = a^{p-i-j}b^p \quad
+x = c^k \quad
+y = c^{p-k} \quad
+$$</p><p>If, like in the pumping lemma above, we would pump <em>v</em> and <em>x</em>, you would end up with:</p><p>$$
+v = a^{p+j} \quad
+x = c^{p+k}
+$$</p><p>Which is not in the language.</p></main><footer role=contentinfo><div><label for=themer>dark theme: <input type=checkbox id=themer class=vh>
 <span aria-hidden=true></span></label></div></footer></div></div></div><script src=/js/dom-scripts.js></script><script src=/js/prism.js></script><script src=/js/search.7aef046a0cc8b0c532f1d20087b920459bc868c936bb48a6ae221eceefca2d07.js></script><link rel=stylesheet href=/css/search.fe0cd54a21628574bff49d721c827d1bb165ab56b0f22dd55ae78addbe61c309.css></link>
 <script src=/js/custom_01.js></script><script src=/js/custom_02.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css integrity=sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js integrity=sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js integrity=sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI crossorigin=anonymous onload=renderMathInElement(document.body)></script><script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-123456789-1","auto"),ga("send","pageview")</script><script async src=https://www.google-analytics.com/analytics.js></script></body></html>
